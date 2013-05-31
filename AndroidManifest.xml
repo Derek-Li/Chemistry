@@ -34,7 +34,7 @@
         </activity>
         
         <activity
-            android:name="com.example.chemistry.MultiChoiceAtom"
+            android:name="com.example.chemistry.MultiChoice"
             android:label="@string/topicatom" >
             <intent-filter>
                 <action android:name="com.example.chemistry.MultiChoiceAtom" />

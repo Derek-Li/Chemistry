@@ -18,27 +18,27 @@
             android:textAllCaps="true" />
 
         <Button
-            android:id="@+id/periodic_table"
+            android:id="@+id/colligative"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center|left"
-            android:text="@string/periodic_table"
+            android:text="@string/colligative"
             android:textAllCaps="true" />
 
         <Button
-            android:id="@+id/bonding"
+            android:id="@+id/acid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center|left"
-            android:text="@string/bonding"
+            android:text="@string/acid"
             android:textAllCaps="true" />
 
         <Button
-            android:id="@+id/formulasequations"
+            android:id="@+id/organic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center|left"
-            android:text="@string/formulasequations"
+            android:text="@string/organic"
             android:textAllCaps="true" />
     </LinearLayout>
     

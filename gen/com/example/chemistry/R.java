@@ -9,7 +9,7 @@ package com.example.chemistry;
 
 public final class R {
     public static final class array {
-        public static final int atomquestions=0x7f060000;
+        public static final int theatom=0x7f060000;
     }
     public static final class attr {
     }
@@ -27,15 +27,15 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+        public static final int acid=0x7f09000e;
         public static final int action_settings=0x7f090010;
         public static final int atoms=0x7f09000c;
-        public static final int bonding=0x7f09000e;
         public static final int bsubmit=0x7f09000b;
+        public static final int colligative=0x7f09000d;
         public static final int copyright=0x7f090004;
-        public static final int formulasequations=0x7f09000f;
         public static final int full_regents=0x7f090003;
         public static final int multi_choice=0x7f090000;
-        public static final int periodic_table=0x7f09000d;
+        public static final int organic=0x7f09000f;
         public static final int points=0x7f090002;
         public static final int rchoice0=0x7f090007;
         public static final int rchoice1=0x7f090008;
@@ -47,45 +47,42 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int full_regents=0x7f030001;
-        public static final int points=0x7f030002;
-        public static final int questions_activity=0x7f030003;
-        public static final int shortanswers=0x7f030004;
-        public static final int topics=0x7f030005;
+        public static final int questions_activity=0x7f030001;
+        public static final int topics=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f080000;
     }
     public static final class string {
+        public static final int acid=0x7f05000c;
         public static final int action_settings=0x7f050005;
         public static final int app_name=0x7f050000;
         public static final int atomquestions=0x7f050004;
         public static final int atoms=0x7f05000a;
-        public static final int bonding=0x7f05000c;
         public static final int choosetopic=0x7f050002;
+        public static final int colligative=0x7f05000b;
         public static final int copyright=0x7f05000e;
         public static final int firstpage=0x7f050001;
-        public static final int formulasequations=0x7f05000d;
         public static final int full_regents=0x7f050009;
         public static final int multi_choice=0x7f050006;
-        public static final int periodic_table=0x7f05000b;
+        public static final int organic=0x7f05000d;
         public static final int points=0x7f050008;
-        public static final int question1=0x7f050010;
-        public static final int question1a=0x7f050011;
-        public static final int question1ans=0x7f050015;
-        public static final int question1b=0x7f050012;
-        public static final int question1c=0x7f050013;
-        public static final int question1d=0x7f050014;
-        public static final int question1exp=0x7f050016;
-        public static final int question2=0x7f050017;
-        public static final int question2a=0x7f050018;
-        public static final int question2ans=0x7f05001c;
-        public static final int question2b=0x7f050019;
-        public static final int question2c=0x7f05001a;
-        public static final int question2d=0x7f05001b;
-        public static final int question2exp=0x7f05001d;
         public static final int short_answers=0x7f050007;
         public static final int submit=0x7f05000f;
+        public static final int theatomquestion1=0x7f050010;
+        public static final int theatomquestion1a=0x7f050011;
+        public static final int theatomquestion1ans=0x7f050015;
+        public static final int theatomquestion1b=0x7f050012;
+        public static final int theatomquestion1c=0x7f050013;
+        public static final int theatomquestion1d=0x7f050014;
+        public static final int theatomquestion1exp=0x7f050016;
+        public static final int theatomquestion2=0x7f050017;
+        public static final int theatomquestion2a=0x7f050018;
+        public static final int theatomquestion2ans=0x7f05001c;
+        public static final int theatomquestion2b=0x7f050019;
+        public static final int theatomquestion2c=0x7f05001a;
+        public static final int theatomquestion2d=0x7f05001b;
+        public static final int theatomquestion2exp=0x7f05001d;
         public static final int topicatom=0x7f050003;
     }
     public static final class style {

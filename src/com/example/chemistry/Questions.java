@@ -7,9 +7,9 @@ package com.example.chemistry;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -75,14 +75,10 @@ public class Questions extends Activity implements OnCheckedChangeListener,
 		if (questionId == null) {
 			Bundle gotBasket = getIntent().getExtras();
 			questionId = gotBasket.getString("question");
+			counter = Integer.parseInt(questionId.replaceAll("\\D",""));
 		} else {
-			if (counter <= getResources().getStringArray(R.array.atomquestions).length) {
+			if (counter <= getResources().getStringArray(R.array.theatom).length) 
 				questionId = questionId.replaceAll("\\d", "") + counter;
-			} else {
-				Log.i("TAG", "NEW INTENT");
-				// Intent a = new Intent(this,Questions.class);
-				// startActivity(a);
-			}
 		}
 		counter++;
 	}
@@ -130,21 +126,44 @@ public class Questions extends Activity implements OnCheckedChangeListener,
 					.setNegativeButton("OK", null).show();
 
 		} else if (answer.equals(setChoice)) {
-			new AlertDialog.Builder(this).setTitle("CORRECT")
-					.setMessage("Your selection was correct!")
-					.setNegativeButton("OK", null).show();
-			NextInstance();
+			if(counter <= getResources().getStringArray(R.array.theatom).length){
+				new AlertDialog.Builder(this)
+				.setTitle("CORRECT")
+				.setMessage("Your selection was correct!")
+				.setNegativeButton("OK", null)
+				.show();
+				runProgram();
+			}else{
+				new AlertDialog.Builder(this)
+				.setTitle("CORRECT\nThis is the end of the quiz.")
+				.setMessage("Your selection was correct!")
+				.setNegativeButton("OK", new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface x, int y){
+						startActivity(new Intent("com.example.chemistry.Topics"));
+					}
+				})	
+				.show();
+			}
 		} else {
-			new AlertDialog.Builder(this).setTitle("Wrong")
-					.setMessage(explanation).setNegativeButton("OK", null)
-					.show();
-			NextInstance();
+			if(counter <= getResources().getStringArray(R.array.theatom).length){
+				new AlertDialog.Builder(this)
+				.setTitle("Wrong")
+				.setMessage(explanation)
+				.setNegativeButton("OK", null)	
+				.show();
+				runProgram();
+			}else{
+				new AlertDialog.Builder(this)
+				.setTitle("Wrong\nThis is the end of the quiz.")
+				.setMessage(explanation)
+				.setNegativeButton("OK", new DialogInterface.OnClickListener(){
+					public void onClick(DialogInterface x, int y){
+						startActivity(new Intent("com.example.chemistry.Topics"));
+					}
+				})	
+				.show();
+			}
+				
 		}
 	}
-
-	private void NextInstance() {
-		// TODO Auto-generated method stub
-		runProgram();
-	}
-
 }
