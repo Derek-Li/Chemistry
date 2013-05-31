@@ -9,7 +9,10 @@ package com.example.chemistry;
 
 public final class R {
     public static final class array {
+        public static final int acidquestions=0x7f060002;
         public static final int atomquestions=0x7f060000;
+        public static final int collquestions=0x7f060001;
+        public static final int organicquestions=0x7f060003;
     }
     public static final class attr {
     }
@@ -27,15 +30,15 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+        public static final int acid=0x7f09000e;
         public static final int action_settings=0x7f090010;
         public static final int atoms=0x7f09000c;
-        public static final int bonding=0x7f09000e;
         public static final int bsubmit=0x7f09000b;
+        public static final int colligative=0x7f09000d;
         public static final int copyright=0x7f090004;
-        public static final int formulasequations=0x7f09000f;
         public static final int full_regents=0x7f090003;
         public static final int multi_choice=0x7f090000;
-        public static final int periodic_table=0x7f09000d;
+        public static final int organic=0x7f09000f;
         public static final int points=0x7f090002;
         public static final int rchoice0=0x7f090007;
         public static final int rchoice1=0x7f090008;
@@ -57,33 +60,54 @@ public final class R {
         public static final int main=0x7f080000;
     }
     public static final class string {
+        public static final int acid=0x7f05000c;
+        public static final int acidquestion1=0x7f050025;
+        public static final int acidquestion1a=0x7f050026;
+        public static final int acidquestion1ans=0x7f05002a;
+        public static final int acidquestion1b=0x7f050027;
+        public static final int acidquestion1c=0x7f050028;
+        public static final int acidquestion1d=0x7f050029;
+        public static final int acidquestion1exp=0x7f05002b;
         public static final int action_settings=0x7f050005;
         public static final int app_name=0x7f050000;
+        public static final int atomquestion1=0x7f050010;
+        public static final int atomquestion1a=0x7f050011;
+        public static final int atomquestion1ans=0x7f050015;
+        public static final int atomquestion1b=0x7f050012;
+        public static final int atomquestion1c=0x7f050013;
+        public static final int atomquestion1d=0x7f050014;
+        public static final int atomquestion1exp=0x7f050016;
+        public static final int atomquestion2=0x7f050017;
+        public static final int atomquestion2a=0x7f050018;
+        public static final int atomquestion2ans=0x7f05001c;
+        public static final int atomquestion2b=0x7f050019;
+        public static final int atomquestion2c=0x7f05001a;
+        public static final int atomquestion2d=0x7f05001b;
+        public static final int atomquestion2exp=0x7f05001d;
         public static final int atomquestions=0x7f050004;
         public static final int atoms=0x7f05000a;
-        public static final int bonding=0x7f05000c;
         public static final int choosetopic=0x7f050002;
+        public static final int colligative=0x7f05000b;
+        public static final int collquestion1=0x7f05001e;
+        public static final int collquestion1a=0x7f05001f;
+        public static final int collquestion1ans=0x7f050023;
+        public static final int collquestion1b=0x7f050020;
+        public static final int collquestion1c=0x7f050021;
+        public static final int collquestion1d=0x7f050022;
+        public static final int collquestion1exp=0x7f050024;
         public static final int copyright=0x7f05000e;
         public static final int firstpage=0x7f050001;
-        public static final int formulasequations=0x7f05000d;
         public static final int full_regents=0x7f050009;
         public static final int multi_choice=0x7f050006;
-        public static final int periodic_table=0x7f05000b;
+        public static final int organic=0x7f05000d;
+        public static final int organicquestion1=0x7f05002c;
+        public static final int organicquestion1a=0x7f05002d;
+        public static final int organicquestion1ans=0x7f050031;
+        public static final int organicquestion1b=0x7f05002e;
+        public static final int organicquestion1c=0x7f05002f;
+        public static final int organicquestion1d=0x7f050030;
+        public static final int organicquestion1exp=0x7f050032;
         public static final int points=0x7f050008;
-        public static final int question1=0x7f050010;
-        public static final int question1a=0x7f050011;
-        public static final int question1ans=0x7f050015;
-        public static final int question1b=0x7f050012;
-        public static final int question1c=0x7f050013;
-        public static final int question1d=0x7f050014;
-        public static final int question1exp=0x7f050016;
-        public static final int question2=0x7f050017;
-        public static final int question2a=0x7f050018;
-        public static final int question2ans=0x7f05001c;
-        public static final int question2b=0x7f050019;
-        public static final int question2c=0x7f05001a;
-        public static final int question2d=0x7f05001b;
-        public static final int question2exp=0x7f05001d;
         public static final int short_answers=0x7f050007;
         public static final int submit=0x7f05000f;
         public static final int topicatom=0x7f050003;

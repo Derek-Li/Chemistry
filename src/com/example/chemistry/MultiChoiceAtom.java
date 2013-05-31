@@ -27,7 +27,7 @@ public class MultiChoiceAtom extends ListActivity {
 		Bundle basket = new Bundle();
 		formatedQuestion = questions[position].replaceAll("\\s",""); 
 		basket.putString("question", formatedQuestion.toLowerCase());
-		Intent a = new Intent(this,Questions.class);
+		Intent a = new Intent(this,QuestionsAtom.class);
 		a.putExtras(basket); 
 		startActivity(a);
 

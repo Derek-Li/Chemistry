@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class Topics extends Activity implements View.OnClickListener {
 
-	Button atom, periodic, bonding, formulas;
+	Button atom, colligative, acid, organic;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -16,14 +16,14 @@ public class Topics extends Activity implements View.OnClickListener {
 		setContentView(R.layout.topics);
 
 		atom = (Button) findViewById(R.id.atoms);
-		periodic = (Button) findViewById(R.id.periodic_table);
-		bonding = (Button) findViewById(R.id.bonding);
-		formulas = (Button) findViewById(R.id.formulasequations);
+		colligative = (Button) findViewById(R.id.colligative);
+		acid = (Button) findViewById(R.id.acid);
+		organic = (Button) findViewById(R.id.organic);
 
 		atom.setOnClickListener(this);
-		periodic.setOnClickListener(this);
-		bonding.setOnClickListener(this);
-		formulas.setOnClickListener(this);
+		colligative.setOnClickListener(this);
+		acid.setOnClickListener(this);
+		organic.setOnClickListener(this);
 		
 		
 	}
@@ -33,14 +33,14 @@ public class Topics extends Activity implements View.OnClickListener {
 		case R.id.atoms:
 			startActivity(new Intent("com.example.chemistry.MultiChoiceAtom"));
 			break;
-		case R.id.periodic_table:
-			startActivity(new Intent("com.example.chemistry.PeriodicTable"));
+		case R.id.colligative:
+			startActivity(new Intent("com.example.chemistry.MultiChoiceColl"));
 			break;
-		case R.id.bonding:
-			startActivity(new Intent("com.example.chemistry.Bonding"));
+		case R.id.acid:
+			startActivity(new Intent("com.example.chemistry.MultiChoiceAcid"));
 			break;
-		case R.id.formulasequations:
-			startActivity(new Intent("com.example.chemistry.FormulasEquations"));
+		case R.id.organic:
+			startActivity(new Intent("com.example.chemistry.MultiChoiceOrg"));
 			break;
 		}
 	}

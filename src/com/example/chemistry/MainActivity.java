@@ -32,13 +32,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			startActivity(new Intent("com.example.chemistry.Topics"));
 			break;
 		case R.id.short_answers:
-			startActivity(new Intent("com.example.chemistry.ShortAnswers"));
+		//	startActivity(new Intent("com.example.chemistry.ShortAnswers"));
 			break;
 		case R.id.points:
-			startActivity(new Intent("com.example.chemistry.Points"));
+		//	startActivity(new Intent("com.example.chemistry.Points"));
 			break;
 		case R.id.full_regents:
-			startActivity(new Intent("com.example.chemistry.FullRegents"));
+		//	startActivity(new Intent("com.example.chemistry.FullRegents"));
 			break;
 		}
 	}

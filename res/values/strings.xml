@@ -7,14 +7,17 @@
     <string name="topicatom">ATOM</string>
     <string name="atomquestions">ATOM QUESTIONS</string>
     <string name="action_settings">Settings</string>
+    
     <string name="multi_choice">Multiple Choice</string>
     <string name="short_answers">Short Answers</string>
     <string name="points">Points</string>
     <string name="full_regents">Full Regents</string>
+    
     <string name="atoms">The Atom</string>
-    <string name="periodic_table">Periodic Table</string>
-    <string name="bonding">Bonding</string>
-    <string name="formulasequations">Formulas &amp; Equations</string>
+    <string name="colligative">Colligative Properties</string>
+    <string name="acid">Acid Base</string>
+    <string name="organic">Organic Chem</string>
+    
     <string name="copyright">&#169;2013 STEM-SCL</string>
     <string name="submit">Submit Answer</string>
 
@@ -23,19 +26,58 @@
         <item>Question 2</item>
     </string-array>
 
-    <string name="question1">What information is necessary to determine the atomic mass of the element Chlorine?</string>
-    <string name="question1a">a.  the atomic mass of each artificially produced isotope of chlorine, only</string>
-    <string name="question1b">b.  the relative abundance of each naturally occurring isotope of chlorine, only</string>
-    <string name="question1c">c.  the atomic mass and the relative abundance of each naturally occurring isotope of chlorine</string>
-    <string name="question1d">d.  the atomic mass and the relative abundance of each naturally occurring and artificially produced isotope of chlorine</string>
-    <string name="question1ans">question1c</string>
-    <string name="question1exp">The atomic mass of an atom, in this case Chlorine, is calculated by multiplying the masses of each chlorine isotope by its percent abundance and then dividing by 100. This gives you the weighted atomic mass, which number is found on the periodic table.</string>
-    <string name="question2">An atom of aluminum in the ground state and an atom of gallium in the ground state have the same </string>
-    <string name="question2a">a.  mass</string>
-    <string name="question2b">b.  electronegativity</string>
-    <string name="question2c">c.  total number of protons</string>
-    <string name="question2d">d.  total number of valence electrons</string>
-    <string name="question2ans">question2d</string>
-    <string name="question2exp">Aluminum and Gallium are both found in group 13, which contains 3 valence electrons, therefore they both have 3 valence electrons on their outer shell.</string>
+    <string name="atomquestion1">What information is necessary to determine the atomic mass of the element Chlorine?</string>
+    <string name="atomquestion1a">a.  the atomic mass of each artificially produced isotope of chlorine, only</string>
+    <string name="atomquestion1b">b.  the relative abundance of each naturally occurring isotope of chlorine, only</string>
+    <string name="atomquestion1c">c.  the atomic mass and the relative abundance of each naturally occurring isotope of chlorine</string>
+    <string name="atomquestion1d">d.  the atomic mass and the relative abundance of each naturally occurring and artificially produced isotope of chlorine</string>
+    <string name="atomquestion1ans">atomquestion1c</string>
+    <string name="atomquestion1exp">The atomic mass of an atom, in this case Chlorine, is calculated by multiplying the masses of each chlorine isotope by its percent abundance and then dividing by 100. This gives you the weighted atomic mass, which number is found on the periodic table.</string>
+    
+    <string name="atomquestion2">An atom of aluminum in the ground state and an atom of gallium in the ground state have the same </string>
+    <string name="atomquestion2a">a.  mass</string>
+    <string name="atomquestion2b">b.  electronegativity</string>
+    <string name="atomquestion2c">c.  total number of protons</string>
+    <string name="atomquestion2d">d.  total number of valence electrons</string>
+    <string name="atomquestion2ans">question2d</string>
+    <string name="atomquestion2exp">Aluminum and Gallium are both found in group 13, which contains 3 valence electrons, therefore they both have 3 valence electrons on their outer shell.</string>
 
+    <string-array name="collquestions">
+        <item>Question 1</item>
+    </string-array>
+    
+    <string name="collquestion1">The relatively high boiling point of water is due to having</string>
+    <string name="collquestion1a">a.	hydrogen bonding</string>
+    <string name="collquestion1b">b.	metallic bonding</string>
+    <string name="collquestion1c">c. 	nonpolar covalent bonding</string>
+    <string name="collquestion1d">d.	strong ionic bonding</string>
+    <string name="collquestion1ans">collquestion1a</string>
+    <string name="collquestion1exp">Hydrogen bonding is an intermolecular interaction that plays a role in causing water to have a high boiling point and a low freezing point due to the attraction between the positively charged hydrogen atoms and the negatively charged oxygen atoms.</string>
+ 
+    
+    <string-array name="acidquestions">
+        <item>Question 1</item>
+    </string-array>
+
+    <string name="acidquestion1">Which substance is always a product when an Arrhenius acid in an aqueous solution reacts with an Arrhenius base in an aqueous solution?</string>
+    <string name="acidquestion1a">a. HBr</string>
+    <string name="acidquestion1b">b. H2O</string>
+    <string name="acidquestion1c">c. KBr</string>
+    <string name="acidquestion1d">d. KOH</string>
+    <string name="acidquestion1ans">acidquestion1b</string>
+    <string name="acidquestion1exp">An acid and a base undergo the process of neutralization, therefore always producing water (H2O)</string>
+
+    <string-array name="organicquestions">
+        <item>Question 1</item>
+    </string-array>
+
+    <string name="organicquestion1">Which substance is always a product when an Arrhenius acid in an aqueous solution reacts with an Arrhenius base in an aqueous solution?</string>
+    <string name="organicquestion1a">a.	functional groups</string>
+    <string name="organicquestion1b">b.	molecular masses</string>
+    <string name="organicquestion1c">c.	number of covalent bonds</string>
+    <string name="organicquestion1d">d.	percent composition by mass</string>
+    <string name="organicquestion1ans">organicquestion1a</string>
+    <string name="organicquestion1exp">Ethanol is an alcohol and dimethyl ether is an ether. </string>
+    
+    
 </resources>
