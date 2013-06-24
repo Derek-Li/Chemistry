@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.chemistry.MultiChoiceAtom"
+            android:name="com.example.chemistry.QuestionList"
             android:label="@string/choosetopic" >
             <intent-filter>
                 <action android:name="com.example.chemistry.MultiChoiceAtom" />
@@ -68,7 +68,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.chemistry.QuestionsAtom"
+            android:name="com.example.chemistry.QuestionPage"
             android:label="@string/choosetopic" >
             <intent-filter>
                 <action android:name="com.example.chemistry.QuestionsAtom" />
