@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class QuestionList extends ListActivity {
-	QuestionClass topic; 
+	TopicClass topic; 
 	int topicPosition;
 
 	@Override
@@ -18,7 +18,7 @@ public class QuestionList extends ListActivity {
 		//Gets the extra data from previous activity
 		Intent intent = getIntent();
 		
-		topic = (QuestionClass) intent
+		topic = (TopicClass) intent
 				.getParcelableExtra("topic");
 		topicPosition = intent.getIntExtra("topicPosition", 0);
 		

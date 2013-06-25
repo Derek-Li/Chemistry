@@ -1,17 +1,14 @@
 package com.example.chemistry;
 
-import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 
 public class Topics extends ListActivity{
-	QuestionClass topic = new QuestionClass(); 
+	TopicClass topic = new TopicClass(); 
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +23,9 @@ public class Topics extends ListActivity{
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
+		
+		String[] top = getResources().getStringArray(R.array.topic);
+		
 		
 		Intent intentToOpenQuestionList = new Intent(this,QuestionList.class);
 		intentToOpenQuestionList.putExtra("topic", topic);

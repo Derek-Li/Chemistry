@@ -33,7 +33,7 @@ public class QuestionPage extends Activity implements OnCheckedChangeListener,
 	RadioGroup mcGroup;
 	int counter = 1;
 
-	QuestionClass topic;
+	TopicClass topic;
 	Intent intent;
 
 	@Override
@@ -63,7 +63,7 @@ public class QuestionPage extends Activity implements OnCheckedChangeListener,
 	// Assigns new Values
 	private void setValueId() {
 
-		topic = (QuestionClass) intent.getParcelableExtra("topic");
+		topic = (TopicClass) intent.getParcelableExtra("topic");
 
 		// Sets up the string names to be fetches
 		question.setText(topic.getQuestion()[questionPosition]);
