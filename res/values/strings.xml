@@ -18,6 +18,13 @@
     <string name="copyright">&#169;2013 STEM-SCL</string>
     <string name="submit">Submit Answer</string>
 
+    <string-array name="topic">
+        <item>The Atom</item>
+        <item>Colligative Properties</item>
+        <item>Acid Base</item>
+        <item>Organic Chem</item>
+    </string-array>
+
     <string-array name="atomTitleQuestion">
         <item>Question 1</item>
         <item>Question 2</item>

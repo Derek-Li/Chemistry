@@ -3,15 +3,13 @@ package com.example.chemistry;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class QuestionList extends ListActivity {
-	MultipleChoiceClass topic; 
-	String[] questions;
-	String formatedQuestion;
+	QuestionClass topic; 
+	int topicPosition;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +17,13 @@ public class QuestionList extends ListActivity {
 		
 		//Gets the extra data from previous activity
 		Intent intent = getIntent();
-		topic = (MultipleChoiceClass) intent
+		
+		topic = (QuestionClass) intent
 				.getParcelableExtra("topic");
-
+		topicPosition = intent.getIntExtra("topicPosition", 0);
+		
+		
+		
 		//Creates a list adapter of questions
 		setListAdapter(new ArrayAdapter<String>(QuestionList.this,
 				android.R.layout.simple_list_item_1, topic.getQuestionTitleArray()));

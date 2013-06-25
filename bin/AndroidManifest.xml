@@ -40,33 +40,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.chemistry.MultiChoiceColl"
-            android:label="@string/choosetopic" >
-            <intent-filter>
-                <action android:name="com.example.chemistry.MultiChoiceColl" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.example.chemistry.MultiChoiceAcid"
-            android:label="@string/choosetopic" >
-            <intent-filter>
-                <action android:name="com.example.chemistry.MultiChoiceAcid" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.example.chemistry.MultiChoiceOrg"
-            android:label="@string/choosetopic" >
-            <intent-filter>
-                <action android:name="com.example.chemistry.MultiChoiceOrg" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
         <activity
             android:name="com.example.chemistry.QuestionPage"
             android:label="@string/choosetopic" >
@@ -76,33 +50,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.chemistry.QuestionsColl"
-            android:label="@string/choosetopic" >
-            <intent-filter>
-                <action android:name="com.example.chemistry.QuestionsColl" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.example.chemistry.QuestionsAcid"
-            android:label="@string/choosetopic" >
-            <intent-filter>
-                <action android:name="com.example.chemistry.QuestionsAcid" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.example.chemistry.QuestionsOrg"
-            android:label="@string/choosetopic" >
-            <intent-filter>
-                <action android:name="com.example.chemistry.QuestionsOrg" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+     
     </application>
 
 </manifest>

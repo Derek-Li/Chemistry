@@ -24,7 +24,7 @@ public class QuestionPage extends Activity implements OnCheckedChangeListener,
 	TextView question;
 	Button submit;
 
-	int position;
+	int questionPosition;
 	int selectedAnswer = 4;
 
 	String questionId, choiceAId, choiceBId, choiceCId, choiceDId, answerId,
@@ -33,7 +33,7 @@ public class QuestionPage extends Activity implements OnCheckedChangeListener,
 	RadioGroup mcGroup;
 	int counter = 1;
 
-	MultipleChoiceClass topic;
+	QuestionClass topic;
 	Intent intent;
 
 	@Override
@@ -42,7 +42,7 @@ public class QuestionPage extends Activity implements OnCheckedChangeListener,
 		setContentView(R.layout.questions_activity);
 
 		intent = getIntent();
-		position = intent.getIntExtra("questionPosition", 0);
+		questionPosition = intent.getIntExtra("questionPosition", 0);
 
 		initialize();
 		setValueId();
@@ -63,17 +63,17 @@ public class QuestionPage extends Activity implements OnCheckedChangeListener,
 	// Assigns new Values
 	private void setValueId() {
 
-		topic = (MultipleChoiceClass) intent.getParcelableExtra("topic");
+		topic = (QuestionClass) intent.getParcelableExtra("topic");
 
 		// Sets up the string names to be fetches
-		question.setText(topic.getQuestion()[position]);
-		answer = topic.getAnswer()[position];
-		explanation = topic.getExplanation()[position];
+		question.setText(topic.getQuestion()[questionPosition]);
+		answer = topic.getAnswer()[questionPosition];
+		explanation = topic.getExplanation()[questionPosition];
 
-		choiceA.setText(topic.getChoiceA()[position]);
-		choiceB.setText(topic.getChoiceB()[position]);
-		choiceC.setText(topic.getChoiceC()[position]);
-		choiceD.setText(topic.getChoiceD()[position]);
+		choiceA.setText(topic.getChoiceA()[questionPosition]);
+		choiceB.setText(topic.getChoiceB()[questionPosition]);
+		choiceC.setText(topic.getChoiceC()[questionPosition]);
+		choiceD.setText(topic.getChoiceD()[questionPosition]);
 
 	}
 
@@ -113,10 +113,10 @@ public class QuestionPage extends Activity implements OnCheckedChangeListener,
 					.setNegativeButton("OK",
 							new DialogInterface.OnClickListener() {
 								public void onClick(DialogInterface x, int y) {
-									position++;
-									if (position < topic.getQuestion().length) {
+									questionPosition++;
+									if (questionPosition < topic.getQuestion().length) {
 										Log.e("Position",
-												Integer.toString(position));
+												Integer.toString(questionPosition));
 										Log.e("length", Integer.toString(topic
 												.getQuestion().length));
 										setValueId();
@@ -134,8 +134,8 @@ public class QuestionPage extends Activity implements OnCheckedChangeListener,
 					.setNegativeButton("OK",
 							new DialogInterface.OnClickListener() {
 								public void onClick(DialogInterface x, int y) {
-									position++;
-									if (position < topic.getQuestion().length) {
+									questionPosition++;
+									if (questionPosition < topic.getQuestion().length) {
 										setValueId();
 									} else {
 										startActivity(new Intent(

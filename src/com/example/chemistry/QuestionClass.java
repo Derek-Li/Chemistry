@@ -3,13 +3,13 @@ package com.example.chemistry;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class MultipleChoiceClass implements Parcelable {
+public class QuestionClass implements Parcelable {
 	/**
 	 * I need to create a question Id, create a answer array, explaniation
 	 * array, choices array
 	 */
-	private String topic;
-	private String[] questionTitleArray;
+	private String[] topic;
+	private String[] questionTitle;
 	private String[] question;
 	private String[] answer;
 	private String[] explanation;
@@ -18,16 +18,16 @@ public class MultipleChoiceClass implements Parcelable {
 	private String[] choiceC;
 	private String[] choiceD;
 
-	public MultipleChoiceClass() {
+	public QuestionClass() {
 	}
 
-	public MultipleChoiceClass(String topic, String[] questionTitleArray,
+	public QuestionClass(String[] topic, String[] questionTitleArray,
 			String[] question, String[] answer, String[] explanation,
 			String[] choiceA, String[] choiceB, String[] choiceC,
 			String[] choiceD) {
 		super();
 		this.topic = topic;
-		this.questionTitleArray = questionTitleArray;
+		this.questionTitle = questionTitleArray;
 		this.question = question;
 		this.answer = answer;
 		this.explanation = explanation;
@@ -37,12 +37,12 @@ public class MultipleChoiceClass implements Parcelable {
 		this.choiceD = choiceD;
 	}
 
-	public void setTopic(String topic) {
+	public void setTopic(String[] topic) {
 		this.topic = topic;
 	}
 
 	public void setQuestionTitleArray(String[] question) {
-		this.questionTitleArray = question;
+		this.questionTitle = question;
 	}
 
 	public void setQuestion(String[] question) {
@@ -73,12 +73,12 @@ public class MultipleChoiceClass implements Parcelable {
 		this.choiceD = choiceD;
 	}
 
-	public String getTopic() {
+	public String[] getTopic() {
 		return topic;
 	}
 
 	public String[] getQuestionTitleArray() {
-		return questionTitleArray;
+		return questionTitle;
 	}
 
 	public String[] getQuestion() {
@@ -108,14 +108,15 @@ public class MultipleChoiceClass implements Parcelable {
 	public String[] getChoiceD() {
 		return choiceD;
 	}
-
-	public static Parcelable.Creator<MultipleChoiceClass> getCreator() {
+	
+	
+	public static Parcelable.Creator<QuestionClass> getCreator() {
 		return CREATOR;
 	}
 
-	protected MultipleChoiceClass(Parcel in) {
-		topic = in.readString();
-		questionTitleArray = in.createStringArray();
+	protected QuestionClass(Parcel in) {
+		topic = in.createStringArray();
+		questionTitle = in.createStringArray();
 		question = in.createStringArray();
 		answer = in.createStringArray();
 		explanation = in.createStringArray();
@@ -130,8 +131,8 @@ public class MultipleChoiceClass implements Parcelable {
 	}
 
 	public void writeToParcel(Parcel dest, int flags) {
-		dest.writeString(topic);
-		dest.writeStringArray(questionTitleArray);
+		dest.writeStringArray(topic);
+		dest.writeStringArray(questionTitle);
 		dest.writeStringArray(question);
 		dest.writeStringArray(answer);
 		dest.writeStringArray(explanation);
@@ -141,14 +142,15 @@ public class MultipleChoiceClass implements Parcelable {
 		dest.writeStringArray(choiceD);
 	}
 
-	public static final Parcelable.Creator<MultipleChoiceClass> CREATOR = new Parcelable.Creator<MultipleChoiceClass>() {
-		public MultipleChoiceClass createFromParcel(Parcel in) {
-			return new MultipleChoiceClass(in);
+	public static final Parcelable.Creator<QuestionClass> CREATOR = new Parcelable.Creator<QuestionClass>() {
+		public QuestionClass createFromParcel(Parcel in) {
+			return new QuestionClass(in);
 		}
 
-		public MultipleChoiceClass[] newArray(int size) {
-			return new MultipleChoiceClass[size];
+		public QuestionClass[] newArray(int size) {
+			return new QuestionClass[size];
 		}
 	};
-
+	
+	
 }
